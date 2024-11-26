@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Parkinsans', sans-serif;
     background-image: url(https://mrwallpaper.com/images/hd/billiard-pool-table-balls-vintage-nv1h2xeere4araqh.jpg);
     color: #ecf0f1;
     display: flex;
@@ -45,17 +45,12 @@ body {
   }
   
   .eight-ball {
-    width: 100px;
-    height: 100px;
-    background-color: black;
+    width: 400px;
+    height: 400px;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/020/575/858/small_2x/3d-icon-illustration-billiard-ball-number-eight-png.png);
     border-radius: 50%;
-    margin: 20px auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    border: 2px solid white;
   }
   

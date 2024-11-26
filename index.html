@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
   <title>Magic 8 Ball</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<div class="eight-ball"></div>
+<body >
   <div class="container">
     <h1>Ask the Magic 8 Ball!</h1>
     <input id="userQuestion" type="text" placeholder="What is your question?">
@@ -14,11 +18,10 @@
     <div id="responseContainer">
       <p id="greeting"></p>
       <p id="question"></p>
-      <div class="eight-ball">
         <p id="answer"></p>
-      </div>
     </div>
   </div>
+  
   <script src="script.js"></script>
 </body>
 </html>
