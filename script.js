@@ -1,4 +1,4 @@
-// Step 1: Define userName
+// Select necessary elements
 const userNameInput = document.getElementById('userName');
 const userQuestionInput = document.getElementById('userQuestion');
 const askButton = document.getElementById('askButton');
@@ -6,22 +6,22 @@ const greeting = document.getElementById('greeting');
 const questionDisplay = document.getElementById('question');
 const answerDisplay = document.getElementById('answer');
 
-// Step 2-8: Add logic for Magic 8 Ball
+// Add event listener to the button
 askButton.addEventListener('click', () => {
   const userName = userNameInput.value;
   const userQuestion = userQuestionInput.value;
 
-  // Greeting
+  // Greeting message
   greeting.textContent = userName ? `Hello, ${userName}!` : 'Hello!';
 
   // Display the user's question
   if (userQuestion.trim() !== '') {
     questionDisplay.textContent = `You asked: "${userQuestion}"`;
 
-    // Generate a random number
+    // Generate a random number between 0 and 7
     const randomNumber = Math.floor(Math.random() * 8);
 
-    // Determine the 8 ball's answer
+    // Determine the Magic 8 Ball's answer
     let eightBall = '';
     switch (randomNumber) {
       case 0:
@@ -51,9 +51,9 @@ askButton.addEventListener('click', () => {
     }
 
     // Display the answer
-    answerDisplay.textContent = eightBall;
+    answerDisplay.textContent = `The Magic 8 Ball says: ${eightBall}`;
   } else {
-    questionDisplay.textContent = 'Please enter a question!';
+    questionDisplay.textContent = 'Please ask a question!';
     answerDisplay.textContent = '';
   }
 });

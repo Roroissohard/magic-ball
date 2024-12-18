@@ -1,56 +1,73 @@
 body {
-    font-family: 'Parkinsans', sans-serif;
-    background-image: url(https://mrwallpaper.com/images/hd/billiard-pool-table-balls-vintage-nv1h2xeere4araqh.jpg);
-    color: #ecf0f1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .container {
-    text-align: center;
-    width: 300px;
-    background-color: rgb(72, 146, 88);
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
-  }
-  
-  input {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #52688d;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  button:hover {
-    background-color: #c0392b;
-  }
-  
-  #responseContainer {
-    margin-top: 20px;
-  }
-  
-  .eight-ball {
-    width: 400px;
-    height: 400px;
-    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/020/575/858/small_2x/3d-icon-illustration-billiard-ball-number-eight-png.png);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  background-color: #31ce6d;
+  color: #f1faee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  width: 350px;
+  background: linear-gradient(135deg, #6ce49a, #31ce6d);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #a8dadc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #505050;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-image: url()
+}
+
+#responseContainer {
+  margin-top: 20px;
+}
+
+.eight-ball {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  background: radial-gradient(circle, #000 80%, #222);
+  border-radius: 50%;
+  position: relative;
+}
+
+.eight-ball::after {
+  content: "8";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: #fff;
+  background: #222;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #000;
+}
